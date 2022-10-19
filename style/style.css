@@ -29,10 +29,7 @@ body {
 header {
    background: linear-gradient(315.75deg, rgb(139 142 197 / 74%) 30.06%, rgb(188 120 197 / 66%) 50.74%, #c1ade8 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
-.header__wrapper {
-   border-bottom: 1px solid #828282;
-   transform: matrix(1, 0, 0, 1, 0, 0);
-}
+
 
 
 .header__nav {
@@ -272,23 +269,6 @@ header {
 
 
 /* backgrounds portfolio*/
-
-.momentum  {
-   background-image: url('../assets/images/momentum.png');
-}
-
-.travel {
-   background-image: url('../assets/images/trav4.png');
-}
-
-.zoo {
-   background-image: url('../assets/images/zoo1.png');
-}
-
-.miami {
-   background-image: url('../assets/images/miami.png');
-}
-
 .portfolio__description a {
    display: block;
    
@@ -410,8 +390,22 @@ header {
       margin: 0 auto;
       max-width: 90%;
    }
+
    .certificate img {
       width: 600px;
+   }
+
+   .momentum {
+      width: 950px;
+   }
+   .travel {
+      width: 950px;
+   }
+   .miami {
+      width: 950px;
+   }
+   .zoo {
+      width: 950px;
    }
 }
 
@@ -419,6 +413,29 @@ header {
    .container {
       margin: 0 auto;
       max-width: 90%;
+   }
+
+   .portfolio__description {
+      margin-bottom: 50px;
+   }
+
+   .p-description__bg {
+      margin-bottom: 20px;
+      height: 390px;
+   }
+
+   .momentum {
+      width: 750px;
+   }
+   .travel {
+      width: 750px;
+   }
+   .miami {
+      width: 750px;
+   }
+   .zoo {
+      margin-bottom: 0px;
+      width: 750px;
    }
 
    .skills__programs {
@@ -456,6 +473,25 @@ header {
       max-width: 90%;
    }
 
+
+   .p-description__bg {
+      height: 290px;
+   }
+
+   .momentum {
+      width: 500px;
+   }
+   .travel {
+      width: 500px;
+   }
+   .miami {
+      width: 500px;
+   }
+   .zoo {
+
+      margin-bottom: 15px;
+      width: 500px;
+   }
 
    header {
       display: none;
@@ -546,19 +582,12 @@ header {
    }
 
 
-   .p-description__bg {
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      height: 171px;
-  }
-
   .portfolio__description a {
    margin: 33px 0px 78px;
   }
 
   .portfolio__description a:last-child {
-   margin-bottom: 81px;
+   margin-bottom: 40px;
   }
 
   .contacts__wrapper {
@@ -624,6 +653,24 @@ header {
    .certificate img {
       width: 300px;
    }
+
+   .p-description__bg {
+      height: 170px;
+   }
+
+   .momentum {
+      width: 310px;
+   }
+   .travel {
+      width: 310px;
+   }
+   .miami {
+      width: 310px;
+   }
+   .zoo {
+      margin-bottom: 15px;
+      width: 310px;
+   }
 }
 
 @media screen  and (min-width: 280px) and (max-width: 321px) {
@@ -651,6 +698,23 @@ header {
 
    .certificate img {
       width: 250px;
+   }
+   .p-description__bg {
+      height: 150px;
+   }
+
+   .momentum {
+      width: 270px;
+   }
+   .travel {
+      width: 270px;
+   }
+   .miami {
+      width: 270px;
+   }
+   .zoo {
+      margin-bottom: 15px;
+      width: 270px;
    }
 }
 .portfolio__description a {
@@ -680,13 +744,60 @@ header {
    .certificate img {
       width: 800px;
    }
+
+   .portfolioName {
+      padding-top: 100px;
+   }
+
+   .momentum {
+      width: 1100px;
+   }
+   .travel {
+      width: 1100px;
+   }
+   .miami {
+      width: 1100px;
+   }
+   .zoo {
+      width: 1100px;
+   }
+}
+
+
+.momentum {
+   border-radius: 20px;
+}
+.travel {
+   border-radius: 20px;
+}
+.miami {
+   border-radius: 20px;
+}
+.zoo {
+   border-radius: 20px;
 }
 
 
 @media screen  and (min-width: 441px) and (max-width: 597px) {
-
-
    .certificate img {
+      width: 400px;
+   }
+
+   .p-description__bg {
+      height: 220px;
+   }
+
+   .momentum {
+      width: 400px;
+   }
+   .travel {
+      width: 400px;
+   }
+   .miami {
+      width: 400px;
+   }
+   .zoo {
+      margin-bottom: 15px;
       width: 400px;
    }
 }
@@ -695,4 +806,28 @@ header {
    .certificate img {
       width: 230px;
    }
+   .p-description__bg {
+      height: 130px;
+   }
+
+   .momentum {
+      width: 230px;
+   }
+   .travel {
+      width: 230px;
+   }
+   .miami {
+      width: 230px;
+   }
+   .zoo {
+      margin-bottom: 15px;
+      width: 230px;
+   }
+}
+
+
+.portfolio__description {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
