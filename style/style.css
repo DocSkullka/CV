@@ -510,10 +510,24 @@ header {
       display: none;
    }
 
+   .descriptionModal{
+      display: block;
+      display: flex;
+      align-items: flex-end;
+   
+      transform: rotate(-90deg);
+      height: 61px;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+   }
+
+
    .burger {
+      position: relative;
       display: flex;
       justify-content: flex-end;
-
+      flex-direction: column;
       width: 33px;
       height: 19.19px;
 
@@ -522,7 +536,6 @@ header {
    }
 
    .home__description {
-      /* flex-direction: column; */
       align-items: flex-start;
    }
 
@@ -734,7 +747,7 @@ header {
 
 .certificate img {
    border: 2px solid black;
-}
+}portfolio
 
 .certText {
    font-size: 40px;
@@ -831,4 +844,35 @@ header {
    display: flex;
    flex-direction: column;
    align-items: center;
+}
+
+.popUpHeader {
+   position: absolute;
+   top: -300px;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 100;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+@media screen  and (max-width: 767px) {
+   .popUp {
+      position: relative;
+      border-radius: 15px;
+      width: 60%;
+      background: linear-gradient(315.75deg, rgb(139 142 197 / 74%) 30.06%, rgb(188 120 197 / 66%) 50.74%, #c1ade8 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+   }
+   .header__nav {
+      height: 200px;
+      flex-direction: column;
+      padding: 30px 0px;
+   }
+}
+
+.cross {
+   position: absolute;
+   right: 20px;
+   top: 15px;
 }

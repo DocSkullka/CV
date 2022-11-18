@@ -9,16 +9,27 @@
    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+   <div class="popUpHeader">
+      <div class="popUp" id="popUp">
+         <img class="cross" src="assets/images/cross.svg" alt="cross">
+         <nav class="header__nav" id="header__nav">
+            <a href="#home" class="nav__link lng home">Home</a>
+            <a href="#aboutme" class="nav__link lng about">About me</a>
+            <a href="#skills" class="nav__link lng skills">Skills</a>
+            <a href="#portfolio" class="nav__link lng portfolioText">Portfolio</a>
+            <a href="#contacts" class="nav__link lng contacts">Contacts</a>
+         </nav>
+      </div> 
+   </div>
    <header class="header">
       <div class="container">
          <div class="header__wrapper">
-
             <nav class="header__nav">
-               <a href="#home" class="nav__link">Home</a>
-               <a href="#aboutme" class="nav__link">About me</a>
-               <a href="#skills" class="nav__link">Skills</a>
-               <a href="#portfolio" class="nav__link">Portfolio</a>
-               <a href="#contacts" class="nav__link">Contacts</a>
+               <a href="#home" class="nav__link lng home">Home</a>
+               <a href="#aboutme" class="nav__link lng about">About me</a>
+               <a href="#skills" class="nav__link lng skills">Skills</a>
+               <a href="#portfolio" class="nav__link lng portfolioText">Portfolio</a>
+               <a href="#contacts" class="nav__link lng contacts">Contacts</a>
             </nav>
          </div>
       </div>
@@ -30,17 +41,25 @@
             <div class="home__wrapper">
                <div class="home__description">
                   <div class="hh">
-                  <h1 class="h-description__title">Artem <br> Buyak </h1>
-                  <p class="h-description__text">Front-End Developer <br> 22 years old, Minsk </p>
+                     <h1 class="h-description__title lng name">Artem Buyak </h1>
+                     <div>
+                        <p class="h-description__text lng front">Front-End Developer</p>
+                        <p class="h-description__text lng frontSecond">22 years old, Minsk </p>
+                     </div>
                   </div>
-               <div class="burger">
-                  <img src="./assets/images/Group 3.svg" alt="menu">
-               </div>
+                  <div class="burger">
+                     <img class="burgerImg" id="burgerImg" src="./assets/images/Group 3.svg" alt="menu">
+                     <div class="h-description__lang descriptionModal">
+                        <a href="#" value="ru" class="lang__link ru">ru</a>
+                        <p class="lang__solid">|</p>
+                        <a href="#" value="eng" class="lang__link active eng">eng</a>
+                     </div>
+                  </div>
 
                   <div class="h-description__lang">
-                     <a href="#" class="lang__link">ru</a>
+                     <a href="#" value="ru" class="lang__link ru">ru</a>
                      <p class="lang__solid">|</p>
-                     <a href="#" class="lang__link active">eng</a>
+                     <a href="#" value="eng" class="lang__link active eng">eng</a>
                   </div>
 
                   
@@ -49,24 +68,24 @@
                <div class="home__bg">
                   <img src="./assets/images/me.jpg" alt="Me">
                </div>
-            </div>
-
-            
+            </div> 
          </div>
       </section>
-
+      
       <section class="aboutme" id="aboutme">
          <div class="container">
             <div class="aboutme__wrapper">
-               <h2 class="aboutme__title">
+               <h2 class="aboutme__title lng aboutSecond">
                   About me
                </h2>
                <div class="aboutme__text">
-                  <p>I'm Artem – Front-End Developer from Minsk. <br> I'm interested in Front-End development and
-                     everything connected with it.</p>
-                  <p>I'm studying at courses "Front-End <br> developer" in RS School.</p>
-                  <p> Ready to implement excellent projects <br> with wonderful people.</p>
-                  <p>Education: <br> BNTU(in progress, extramural studies) <br> MSPC(2017-2020)</p>
+                  <p class="aboutMeOne">I'm Artem – Front-End Developer from Minsk.</p>
+                  <p class="aboutMeTwo">I'm interested in Front-End development and everything connected with it.</p>
+                  <p class="aboutMeThree">I'm studying at courses "Front-End developer" in RS School.</p>
+                  <p class="aboutMeFour"> Ready to implement excellent projects with wonderful people.</p>
+                  <p class="aboutMeFive">Education:</p>
+                  <p class="aboutMeSix">BNTU(in progress, extramural studies, start in 2021)</p>
+                  <p class="aboutMeSeven">MSPC(2017-2020)</p>
                </div>
             </div>
          </div>
@@ -75,11 +94,11 @@
       <section class="skills" id="skills">
          <div class="container">
             <div class="skills__wrapper">
-               <h2 class="skills__title">
+               <h2 class="skills__title lng skillsSecond">
                   Skills
                </h2>
-               <p class="skills__text">
-                  I work in such programs as
+               <p class="skills__text lng skillsText">
+                  I work in such programs as:
                </p>
                <div class="skills__programs">
                   <div class="s-programs__desccription">
@@ -148,7 +167,7 @@
             </div>
          </div>
          <div class="certificate">
-            <h2 class="certText">Certificate</h2>
+            <h2 class="certText lng certificateText">Certificate</h2>
             <a href="https://app.rs.school/certificate/vajr6ym1" target="_blank"><img src="./assets/images/sertificate.png" alt="sertificate"></a>
          </div>
       </section>
@@ -156,7 +175,7 @@
       <section class="portfolio" id="portfolio">
          <div class="container">
             <div class="portfolio__wrapper">
-               <h2 class="portfolio__title">
+               <h2 class="portfolio__title lng portfolioTextSecond">
                   Portfolio
                </h2>
                <div class="portfolio__description">
@@ -199,14 +218,14 @@
    <footer class="footer" id="contacts">
       <div class="container">
          <div class="contacts__wrapper">
-            <h2 class="contacts__title">
+            <h2 class="contacts__title lng contactsSecond">
                Contacts
             </h2>
-            <p class="contacts__text">
+            <p class="contacts__text lng contactText">
                Want to know more or just chat? <br> You are welcome!
             </p>
             <a class="contacts__btn" href="https://t.me/docskullka" target="_blank">
-               <span> Send message </span>
+               <span class="message"> Send message </span>
             </a>
             <div class="contacts__links">
                <a class="c-links__social" href="https://www.linkedin.com/in/artem-buyak-622694237/" target="_blank">
@@ -219,8 +238,8 @@
                   <img class="c-links__img" src="./assets/images/icons8-telegram-app.svg" alt="telegram">
                </a>
             </div>
-            <p class="contacts__description">
-               Like me on <br> LinkedIn, GitHub, Telegram
+            <p class="contacts__description lng subscribe">
+               Follow me on <br> LinkedIn, GitHub, Telegram
             </p>
 
          </div>
@@ -229,7 +248,7 @@
    </footer>
 
 
-
+   <script src="index.js"></script>
 </body>
 
 </html>
